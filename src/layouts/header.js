@@ -13,9 +13,9 @@ const Header = () => {
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      // width: '100dvw',
       maxWidth: '100vw',
-      padding:'0 2rem'
+      padding:'1em 2rem',
+      backgroundColor: 'background.main'
     }}
     >
       <Box
@@ -26,10 +26,9 @@ const Header = () => {
         gap: 1
       }}
       >
-      <Logo />
-      <Link component={RouterLink} href="/" sx={{ display: 'contents', 
-        color: '#fff',
-
+      <Logo sx={{ color: '#fff' }} />
+      <Link component={RouterLink} href="/" sx={{ display: 'contents',  
+      color: '#fff'
        }}>
       <Typography variant="h6">aayoutube</Typography>
       </Link>

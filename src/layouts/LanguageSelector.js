@@ -24,10 +24,11 @@ export default function LanguageSelector() {
   return (
     <Box sx={{ minWidth: 120 }}>
       <Select sx={{
-        border: 0
-      }} value={lang} onChange={handleChange} size="small">
+        border: 0,
+        color: '#fff'
+      }} value={lang}  onChange={handleChange} size="small">
         {allLangs.map((langItem) => (
-          <MenuItem key={langItem.value} value={langItem.value}>
+          <MenuItem  key={langItem.value} value={langItem.value}>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <Iconify icon={langItem.icon} width={20} sx={{ mr: 1 }} />
               <Typography variant="body2">{langItem.value}</Typography>

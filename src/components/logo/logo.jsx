@@ -25,7 +25,7 @@ const Logo = forwardRef(
         }}
         {...other}
       >
-        <Icon color='#ff0000bf'  icon="subway:download-1" width="30" height="30" />
+        <Icon color='#FF6D6D'  icon="subway:download-1" width="30" height="30" />
       </Box>
     );
 

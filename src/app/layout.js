@@ -1,6 +1,8 @@
 import { SettingsProvider } from '@/context';
+import { Footer } from '@/layouts/Footer';
 import Header from '@/layouts/header';
 import { LocalizationProvider } from '@/locales';
+import ThemeProvider from '@/theme';
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -34,8 +36,11 @@ export default function RootLayout({ children }) {
 
           }}
         >
+        <ThemeProvider>
           <Header />
         {children}
+          <Footer/>
+        </ThemeProvider>
         </SettingsProvider>
         </LocalizationProvider>
       </body>
